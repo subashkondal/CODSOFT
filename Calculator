@@ -1,0 +1,32 @@
+cont = "yes"
+while cont.lower() == "yes":
+    print("Select operation\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Divition")
+
+    choice = input("Enter choice(1/2/3/4):")
+    
+#input from user
+
+    x = int(input("Enter first number x: "))
+    y = int(input("Enter second number y: "))
+    
+#Perform the calculation based on the user's choice
+
+    if choice == '1':
+       print("The output is",x,"+",y,"=", (x + y))
+
+    elif choice == '2':
+       print("The output is",x,"-",y,"=", (x - y))
+
+    elif choice == '3':
+       print("The output is",x,"*",y,"=", (x * y))
+
+    elif choice == '4':
+       print("The output is",x,"/",y,"=", (x / y))
+    else:
+       print("Invalid input")
+       
+#asking user whether that they need to continue
+       
+    cont = input("Need to Continue?yes/no:")
+    if cont == "no":
+        break
